@@ -1,0 +1,112 @@
+@import "variables1";
+@import "mixins";
+.image {
+  position: relative;
+  margin: -10px;
+}
+
+.image nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+body 
+{
+    background-color:rgb(230, 230, 250);
+    margin: 0px;
+}
+div.Hotel
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: #D8BFD8;
+    width: 100%; 
+}
+div.Hotel a 
+{
+    font-size: 25px;
+}
+.Hotel li 
+{
+    display: inline; 
+    margin-right: 5px; 
+    padding: 3px; 
+}
+h4 
+{
+    text-align:center;
+    font-style: italic;
+    font-size: 2em;
+}
+.column
+{
+    float:left;
+    width: 50%;
+    font-size: 15px;
+}
+h2 
+{
+    font-family: Kholodos, "Futurespore Cyrillic";
+    text-align:center;
+    font-size: 1.1em;
+}
+h1 
+{
+    font-family: Gasrux, "Playlist-Script";
+    text-align:center;
+    font-size: 2em;
+}
+h3 
+{
+    font-family: Kholodos, "Futurespore Cyrillic";
+    text-align:center;
+    font-size: 27px;
+}
+.column1 
+{
+   @extend .column;
+    border-width: 3px;
+}
+h5 
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 16px;
+}      
+a:active 
+{ 
+    color: red; 
+}
+form :active {
+  color: red;
+}
+form button {
+  background: white;
+}
+ul.marklist{ 
+ @include menunav;
+}
+.marklist{
+  @include menuspisok;
+}
+div.Bottom1 {
+	max-width: 1200px;
+	@include Float-Width();
+	table {
+		border-color: map-get($colors, bc);
+		border-style: solid;
+		border-collapse: collapse;
+	}
+}
+div.Bottom2 {
+	float: right;
+	form {
+		float: right;
+	}
+}
+
